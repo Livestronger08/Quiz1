@@ -1,1 +1,10 @@
-<h1>Welcome to Travels Page</h1>
+<% @travels.each do |travel| %>
+    <div>
+        <h1><%= travel.name %></h1><br />
+        <i><%= travel.address %></i><br />
+        <p><%= travel.description %></p><br />
+    </div>
+
+    <hr />
+<% end %>
+
