@@ -10,6 +10,7 @@
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 30px;
+    color: #071ef6;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,4 +26,12 @@ body {
 .navbar {
     background: image_url('coaster.png');
     box-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+.navbar-light .navbar-brand {
+    color: #071ef6;
+    font-family: "Lucida Console", Courier, monospace;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    font-size: 40px;
 }
