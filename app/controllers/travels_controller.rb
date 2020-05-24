@@ -14,6 +14,9 @@ class TravelsController < ApplicationController
         redirect_to root_path
     end
 
+    def show
+    end
+
     private
 
     def travel_params
