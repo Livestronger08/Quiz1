@@ -18,6 +18,10 @@ class TravelsController < ApplicationController
         @travel = Travel.find(params[:id])
     end
 
+    def edit
+        @travel = Travel.find(params[:id])
+    end
+
     private
 
     def travel_params

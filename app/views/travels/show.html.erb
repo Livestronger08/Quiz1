@@ -3,4 +3,7 @@
     <i><%= @travel.address %></i>
     <br/><br/>
     <p><%= @travel.description %></p>
+    <div class="float-right">
+        <%= link_to 'Edit', edit_travel_path(@travel), class: 'btn btn-primary' %>
+    </div>
 </div>
