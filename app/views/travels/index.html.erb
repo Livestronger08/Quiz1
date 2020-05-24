@@ -3,6 +3,30 @@
         <h1><%= travel.name %></h1><br />
         <i><%= travel.address %></i><br /><br />
         <p><%= travel.description %></p><br />
+
+        <% if travel.user.present? %>
+            <small><%= travel.user.email %></small>
+        <% end %>
     </div>
 <% end %>
 
+<br />
+<div class="row feature text-center">
+    <div class="col-12 col-sm">
+        <h3>Amusement Park</h3>
+        <br />
+        <p>Choose an amusement park to learn more about it.</p>
+    </div>
+
+    <div class="col-12 col-sm">
+        <h3>Thrill Roller Coaster</h3>
+        <br />
+        <p>Click and access the information about a roller coaster.</p>
+    </div>
+
+    <div class="col-12 col-sm">
+        <h3>Join our Roller Coaster Fanatic Community</h3>
+        <br />
+        <p>Share with a community about roller coasters.</p>
+    </div>
+</div>
