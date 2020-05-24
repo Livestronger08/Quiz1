@@ -22,6 +22,12 @@ class TravelsController < ApplicationController
         @travel = Travel.find(params[:id])
     end
 
+    def update
+        @travel = Travel.find(params[:id])
+        @travel.update_attributes(travel_params)
+        redirect_to root_path
+    end
+
     private
 
     def travel_params
