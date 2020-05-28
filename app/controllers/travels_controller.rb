@@ -10,7 +10,7 @@ class TravelsController < ApplicationController
     end
 
     def create 
-        current_user.Travel.create(travel_params)
+        current_user.travels.create(travel_params)
         redirect_to root_path
     end
 
@@ -25,6 +25,12 @@ class TravelsController < ApplicationController
     def update
         @travel = Travel.find(params[:id])
         @travel.update_attributes(travel_params)
+        redirect_to root_path
+    end
+
+    def destroy
+        @travel = Travel.find(params[:id])
+        @travel.destroy
         redirect_to root_path
     end
 
